@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.handler.FilterHandlerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-08-18T01:43:54.230Z" hostname="DESKTOP-4LM846H" time="0.139">
+  <properties/>
+  <testcase name="testSkipAttributes()" classname="org.traccar.handler.FilterHandlerTest" time="0.081"/>
+  <testcase name="testFilter()" classname="org.traccar.handler.FilterHandlerTest" time="0.057"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Aug 17, 2025 7:43:54 PM org.traccar.handler.FilterHandler filter
+INFO: Position filtered by Future filters from device: null
+Aug 17, 2025 7:43:54 PM org.traccar.handler.FilterHandler filter
+INFO: Position filtered by Invalid filters from device: null
+]]></system-err>
+</testsuite>

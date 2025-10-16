@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.protocol.GnxProtocolDecoderTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-18T01:43:58.941Z" hostname="DESKTOP-4LM846H" time="0.008">
+  <properties/>
+  <testcase name="testDecode()" classname="org.traccar.protocol.GnxProtocolDecoderTest" time="0.008"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

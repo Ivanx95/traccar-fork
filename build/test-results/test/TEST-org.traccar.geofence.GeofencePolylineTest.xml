@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.geofence.GeofencePolylineTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-08-18T01:43:53.417Z" hostname="DESKTOP-4LM846H" time="0.214">
+  <properties/>
+  <testcase name="testPolylineWkt()" classname="org.traccar.geofence.GeofencePolylineTest" time="0.003"/>
+  <testcase name="testContainsPolylineNear180()" classname="org.traccar.geofence.GeofencePolylineTest" time="0.185"/>
+  <testcase name="testContainsPolyline1Interval()" classname="org.traccar.geofence.GeofencePolylineTest" time="0.009"/>
+  <testcase name="testContainsPolyline3Intervals()" classname="org.traccar.geofence.GeofencePolylineTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

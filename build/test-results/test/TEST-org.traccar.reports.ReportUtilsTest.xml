@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.reports.ReportUtilsTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-08-18T01:44:02.541Z" hostname="DESKTOP-4LM846H" time="0.291">
+  <properties/>
+  <testcase name="testDetectStopsStartedFromTrip()" classname="org.traccar.reports.ReportUtilsTest" time="0.251"/>
+  <testcase name="testDetectStopsMoving()" classname="org.traccar.reports.ReportUtilsTest" time="0.003"/>
+  <testcase name="testDetectTripsSimple()" classname="org.traccar.reports.ReportUtilsTest" time="0.005"/>
+  <testcase name="testCalculateSpentFuel()" classname="org.traccar.reports.ReportUtilsTest" time="0.002"/>
+  <testcase name="testDetectStopsWithTripCut()" classname="org.traccar.reports.ReportUtilsTest" time="0.003"/>
+  <testcase name="testDetectTripsWithFluctuation()" classname="org.traccar.reports.ReportUtilsTest" time="0.004"/>
+  <testcase name="testCalculateDistance()" classname="org.traccar.reports.ReportUtilsTest" time="0.002"/>
+  <testcase name="testDetectTripAndStopByGap()" classname="org.traccar.reports.ReportUtilsTest" time="0.007"/>
+  <testcase name="testDetectStopsOnly()" classname="org.traccar.reports.ReportUtilsTest" time="0.004"/>
+  <testcase name="testDetectTripsSimpleWithIgnition()" classname="org.traccar.reports.ReportUtilsTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

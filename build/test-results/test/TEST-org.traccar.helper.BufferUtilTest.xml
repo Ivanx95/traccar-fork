@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.helper.BufferUtilTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-08-18T01:43:54.704Z" hostname="DESKTOP-4LM846H" time="0.094">
+  <properties/>
+  <testcase name="testReadSignedMagnitudeInt()" classname="org.traccar.helper.BufferUtilTest" time="0.011"/>
+  <testcase name="test1()" classname="org.traccar.helper.BufferUtilTest" time="0.078"/>
+  <testcase name="test2()" classname="org.traccar.helper.BufferUtilTest" time="0.001"/>
+  <testcase name="test3()" classname="org.traccar.helper.BufferUtilTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

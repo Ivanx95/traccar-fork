@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.helper.PatternUtilTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2025-08-18T01:43:54.869Z" hostname="DESKTOP-4LM846H" time="0.0">
+  <properties/>
+  <testcase name="testCheckPattern()" classname="org.traccar.helper.PatternUtilTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

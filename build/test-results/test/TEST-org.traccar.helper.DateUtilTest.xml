@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.helper.DateUtilTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-08-18T01:43:54.819Z" hostname="DESKTOP-4LM846H" time="0.004">
+  <properties/>
+  <testcase name="testCorrectDate()" classname="org.traccar.helper.DateUtilTest" time="0.004"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

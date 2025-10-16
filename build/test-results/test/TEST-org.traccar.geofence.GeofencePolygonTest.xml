@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.geofence.GeofencePolygonTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-08-18T01:43:53.223Z" hostname="DESKTOP-4LM846H" time="0.191">
+  <properties/>
+  <testcase name="testPolygonWkt()" classname="org.traccar.geofence.GeofencePolygonTest" time="0.005"/>
+  <testcase name="testContainsPolygon0()" classname="org.traccar.geofence.GeofencePolygonTest" time="0.002"/>
+  <testcase name="testContainsPolygon()" classname="org.traccar.geofence.GeofencePolygonTest" time="0.001"/>
+  <testcase name="testContainsPolygon180()" classname="org.traccar.geofence.GeofencePolygonTest" time="0.001"/>
+  <testcase name="testCalculateArea()" classname="org.traccar.geofence.GeofencePolygonTest" time="0.174"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

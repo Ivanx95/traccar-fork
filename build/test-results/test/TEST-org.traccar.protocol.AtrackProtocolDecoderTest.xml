@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.protocol.AtrackProtocolDecoderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-08-18T01:43:56.621Z" hostname="DESKTOP-4LM846H" time="0.079">
+  <properties/>
+  <testcase name="testDecodeBeacon()" classname="org.traccar.protocol.AtrackProtocolDecoderTest" time="0.01"/>
+  <testcase name="testDecodeCustom()" classname="org.traccar.protocol.AtrackProtocolDecoderTest" time="0.006"/>
+  <testcase name="testDecode()" classname="org.traccar.protocol.AtrackProtocolDecoderTest" time="0.061"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

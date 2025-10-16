@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.protocol.OsmAndProtocolDecoderTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-08-18T01:44:00.603Z" hostname="DESKTOP-4LM846H" time="0.04">
+  <properties/>
+  <testcase name="testDecodeJson()" classname="org.traccar.protocol.OsmAndProtocolDecoderTest" time="0.02"/>
+  <testcase name="testDecodeQuery()" classname="org.traccar.protocol.OsmAndProtocolDecoderTest" time="0.019"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

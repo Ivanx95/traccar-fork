@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.protocol.At2000ProtocolDecoderTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2025-08-18T01:43:56.592Z" hostname="DESKTOP-4LM846H" time="0.021">
+  <properties/>
+  <testcase name="testDecode()" classname="org.traccar.protocol.At2000ProtocolDecoderTest" time="0.021">
+    <skipped message="Assumption failed: assumption is not true" type="org.opentest4j.TestAbortedException">org.opentest4j.TestAbortedException: Assumption failed: assumption is not true
+	at org.junit.jupiter.api.Assumptions.throwAssumptionFailed(Assumptions.java:321)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:120)
+	at org.junit.jupiter.api.Assumptions.assumeTrue(Assumptions.java:71)
+	at org.traccar.protocol.At2000ProtocolDecoderTest.testDecode(At2000ProtocolDecoderTest.java:13)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+</skipped>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

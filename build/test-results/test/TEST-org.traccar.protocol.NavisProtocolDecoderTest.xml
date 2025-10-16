@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.protocol.NavisProtocolDecoderTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-08-18T01:44:00.237Z" hostname="DESKTOP-4LM846H" time="0.025">
+  <properties/>
+  <testcase name="testDecodeNtcb()" classname="org.traccar.protocol.NavisProtocolDecoderTest" time="0.007"/>
+  <testcase name="testDecodeFlex10()" classname="org.traccar.protocol.NavisProtocolDecoderTest" time="0.011"/>
+  <testcase name="testDecodeFlex20()" classname="org.traccar.protocol.NavisProtocolDecoderTest" time="0.006"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

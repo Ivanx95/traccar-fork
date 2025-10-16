@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.traccar.geocoder.GeocoderTest" tests="14" skipped="14" failures="0" errors="0" timestamp="2025-08-18T01:43:53.140Z" hostname="DESKTOP-4LM846H" time="0.066">
+  <properties/>
+  <testcase name="testGeoapify()" classname="org.traccar.geocoder.GeocoderTest" time="0.004">
+    <skipped/>
+  </testcase>
+  <testcase name="testBan()" classname="org.traccar.geocoder.GeocoderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testPositionStack()" classname="org.traccar.geocoder.GeocoderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testHere()" classname="org.traccar.geocoder.GeocoderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testMapmyIndia()" classname="org.traccar.geocoder.GeocoderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGeocodeXyz()" classname="org.traccar.geocoder.GeocoderTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testGisgraphy()" classname="org.traccar.geocoder.GeocoderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testOpenCage()" classname="org.traccar.geocoder.GeocoderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testNominatim()" classname="org.traccar.geocoder.GeocoderTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <testcase name="testMapTiler()" classname="org.traccar.geocoder.GeocoderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGeocodeFarm()" classname="org.traccar.geocoder.GeocoderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGeocodeJSON()" classname="org.traccar.geocoder.GeocoderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testGoogle()" classname="org.traccar.geocoder.GeocoderTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testMapbox()" classname="org.traccar.geocoder.GeocoderTest" time="0.001">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
