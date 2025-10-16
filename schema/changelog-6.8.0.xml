@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd"
+  logicalFilePath="changelog-6.8.0">
+
+  <changeSet author="author" id="changelog-6.8.0">
+    <preConditions onFail="MARK_RAN">
+      <not>
+        <tableExists tableName="tc_clients"/>
+      </not>
+    </preConditions>
+
+    <createTable tableName="tc_clients">
+      <column autoIncrement="true" name="id" type="INT">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="name" type="VARCHAR(64)" />
+      <column name="email" type="VARCHAR(64)" />
+      <column name="rfc" type="VARCHAR(64)" />
+      <column name="attributes" type="VARCHAR(4000)">
+        <constraints nullable="false" />
+      </column>
+    </createTable>
+
+
+    <addColumn tableName="tc_orders">
+      <column name="containers" type="VARCHAR(128)" />
+      <column name="starttime" type="DATETIME" />
+      <column name="endtime" type="DATETIME" />
+      <column name="total" type="DECIMAL(14,6)" />
+    </addColumn>
+
+    <createTable tableName="tc_order_device">
+      <column name="orderid" type="INT" />
+      <column name="deviceid" type="INT" />
+    </createTable>
+
+    <createTable tableName="tc_order_client">
+      <column name="orderid" type="INT" />
+      <column name="clientid" type="INT" />
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="tc_order_device" baseColumnNames="deviceid" constraintName="fk_order_device_device" referencedTableName="tc_devices" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_order_device" baseColumnNames="orderid" constraintName="fk_order_device_order" referencedTableName="tc_orders" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_order_client" baseColumnNames="clientid" constraintName="tc_client_order_client" referencedTableName="tc_clients" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_order_client" baseColumnNames="orderid" constraintName="tc_client_order_order" referencedTableName="tc_orders" referencedColumnNames="id" onDelete="CASCADE" />
+  </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd"
+  logicalFilePath="changelog-7.2.0">
+
+  <changeSet author="author" id="changelog-7.2.0">
+    <preConditions onFail="MARK_RAN">
+      <not>
+        <tableExists tableName="tc_documents"/>
+      </not>
+    </preConditions>
+    <createTable tableName="tc_documents">
+      <column autoIncrement="true" name="id" type="INT">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="path" type="VARCHAR(100)" />
+      <column name="filename" type="VARCHAR(100)" />
+      <column name="createdat" type="DATETIME" />
+
+    </createTable>
+
+    <createTable tableName="tc_user_document">
+      <column name="userid" type="INT" />
+      <column name="documentid" type="INT" />
+
+    </createTable>
+
+    <createTable tableName="tc_order_document">
+
+      <column name="orderid" type="INT" />
+      <column name="documentid" type="INT" />
+
+    </createTable>
+
+
+
+    <addForeignKeyConstraint baseTableName="tc_order_document" baseColumnNames="documentid" constraintName="fk_tc_order_document_document" referencedTableName="tc_documents" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_order_document" baseColumnNames="orderid" constraintName="fk_tc_order_document_order" referencedTableName="tc_orders" referencedColumnNames="id" onDelete="CASCADE" />
+
+    <addForeignKeyConstraint baseTableName="tc_user_document" baseColumnNames="userid" constraintName="fk_tc_user_document_user" referencedTableName="tc_users" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_user_document" baseColumnNames="documentid" constraintName="fk_tc_user_document_document" referencedTableName="tc_documents" referencedColumnNames="id" onDelete="CASCADE" />
+
+  </changeSet>
+
+</databaseChangeLog>

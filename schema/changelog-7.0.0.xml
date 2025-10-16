@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd"
+  logicalFilePath="changelog-7.0.0">
+
+  <changeSet author="author" id="changelog-7.0.0">
+    <preConditions onFail="MARK_RAN">
+      <not>
+        <tableExists tableName="tc_orders_positions"/>
+      </not>
+    </preConditions>
+
+    <createTable tableName="tc_orders_positions">
+      <column autoIncrement="true" name="id" type="INT">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="orderid" type="INT">
+        <constraints nullable="false" />
+      </column>
+      <column name="positionid" type="INT">
+        <constraints nullable="false" />
+      </column>
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="tc_orders_positions" baseColumnNames="positionid" constraintName="fk_orders_position_position" referencedTableName="tc_positions" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_orders_positions" baseColumnNames="orderid" constraintName="fk_orders_position_order" referencedTableName="tc_orders" referencedColumnNames="id" onDelete="CASCADE" />
+
+  </changeSet>
+
+</databaseChangeLog>

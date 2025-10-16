@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.4.xsd"
+  logicalFilePath="changelog-6.9.0">
+
+  <changeSet author="author" id="changelog-6.9.0">
+    <preConditions onFail="MARK_RAN">
+      <not>
+        <tableExists tableName="tc_orders_geofences"/>
+      </not>
+    </preConditions>
+
+    <createTable tableName="tc_orders_geofences">
+      <column autoIncrement="true" name="id" type="INT">
+        <constraints primaryKey="true" />
+      </column>
+      <column name="orderid" type="INT">
+        <constraints nullable="false" />
+      </column>
+      <column name="order" type="INT"/>
+      <column name="geofenceid" type="INT">
+        <constraints nullable="false" />
+      </column>
+    </createTable>
+
+    <addForeignKeyConstraint baseTableName="tc_orders_geofences" baseColumnNames="geofenceid" constraintName="fk_orders_geofence_geofence" referencedTableName="tc_geofences" referencedColumnNames="id" onDelete="CASCADE" />
+    <addForeignKeyConstraint baseTableName="tc_orders_geofences" baseColumnNames="orderid" constraintName="fk_orders_geofence_order" referencedTableName="tc_orders" referencedColumnNames="id" onDelete="CASCADE" />
+
+  </changeSet>
+
+</databaseChangeLog>
